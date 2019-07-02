@@ -17,9 +17,6 @@ public class Task {
   private double startTime;
   private double endTime;
 
-  public Task() {
-  }
-
   public void setName(String name){
     this.name = name;
   }
@@ -40,7 +37,7 @@ public class Task {
     this.endTime = this.startTime + this.endTime;
   }
 
-  public int getid(){
+  public int getId(){
     return this.id;
   }
 
@@ -52,8 +49,16 @@ public class Task {
     return this.description;
   }
 
-  public String getTime(){
-    return
+  public double getTime(){
+    return this.time;
+  }
+
+  public double getStartTime(){
+    return this.startTime;
+  }
+
+  public double getEndTime(){
+    return this.endTime;
   }
 
 }
